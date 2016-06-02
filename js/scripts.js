@@ -1,21 +1,30 @@
 $(document).ready(function() {
-  $("form#political-beliefs").submit(function(event) {
-    var government = parseInt($("select#government").val());
-    var security = parseInt($("select#security").val());
-    var charity = parseInt($("select#charity").val());
-    var result = (government + security + charity);
+  $("form#the-wire").submit(function(event) {
+    var liberal = parseInt($("select#liberal").val());
+    var superficial = parseInt($("select#superficial").val());
+    var faithful = parseInt($("select#faithful").val());
+    var trustworthy = parseInt($("select#trustworthy").val());
+    var generous = parseInt($("select#generous").val());
+    var honest = parseInt($("select#honest").val());
+    var result = (liberal + superficial + faithful + trustworthy + generous + honest);
 
     if (result === 0) {
-      $("#ideological-range").text("Very Liberal");
+      $("#wire-character").text("Marlo");
     } else if (result === 1) {
-      $("#ideological-range").text("Liberal");
+      $("#wire-character").text("Marlo");
     } else if (result === 2) {
-      $("#ideological-range").text("Conservative");
+      $("#wire-character").text("Jimmy");
     } else if (result === 3) {
-      $("#ideological-range").text("Very Conservative");
+      $("#wire-character").text("Jimmy");
+    } else if (result === 4) {
+      $("#wire-character").text("Jimmy");
+    } else if (result === 5) {
+      $("#wire-character").text("Omar");
+    } else if (result === 6) {
+      $("#wire-character").text("Omar");
     }
 
-    $("#ideology").show();
+    $("#character").show();
 
     event.preventDefault();
 
