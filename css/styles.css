@@ -1,0 +1,13 @@
+.btn {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#ideology {
+  display: none;
+}
+
+select {
+  display: block;
+  margin-bottom: 20px;
+}

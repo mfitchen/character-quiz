@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Character Quiz: The Wire</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Character Quiz: The Wire</h1>
+      <h3>Which Character From The Wire Are You</h3>
+      <p>HBO's The Wire looks at the narcotics scene in Baltimore through the eyes of law enforcers as well as the drug dealers and users.</p>
+
+      <form id="the-wire">
+        <label for"liberal">?</label>
+        <select id="liberal">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <label for"superficial">?</label>
+        <select id="superficial">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <label for"faithful">?</label>
+        <select id="faithful">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <label for"trustworthy">?</label>
+        <select id="trustworthy">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <label for"generous">?</label>
+        <select id="generous">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <label for"honest">?</label>
+        <select id="honest">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+
+        <button type="submit" class="btn">What Character Am I?</button>
+      </form>
+
+      <div id="character">
+        <p>You are <span id="wire-character"></span>.</p>
+      </div>
+    </div>
+  </body>
+</html>
